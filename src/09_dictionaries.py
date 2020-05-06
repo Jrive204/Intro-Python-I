@@ -49,7 +49,7 @@ print(waypoints)
 # waypoints list.
 
 # YOUR CODE HERE
-waypoints[0]["lat"]=-130
+waypoints[0]["lon"]=-130
 waypoints[0]["name"]="not a real place"
 
 print(waypoints)

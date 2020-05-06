@@ -30,3 +30,43 @@ it should use today’s date to get the month and year.
 import sys
 import calendar
 from datetime import datetime
+
+
+
+def CalFun():
+  c = calendar.TextCalendar(calendar.SUNDAY)  
+  x, y = 2020,5
+  if len( sys.argv) == 1:
+    print(datetime.today())
+  while True:
+    try:
+      a,b= input(f"Enter a two value, one for Year and Month: ie {x},{y}\n").split(',')
+      break
+    except ValueError:
+       return print(datetime.today())
+       
+  print(sys.argv)
+
+  # return c.prmonth(int(sys.argv[1]),int(sys.argv[2]))
+  return c.prmonth(int(a),int(b))
+
+
+
+CalFun()
+
+
+
+# while True:
+#     try:
+#         age = int(input('How old are you? '))
+#         break
+#     except ValueError:
+#         print('Please enter a whole number')
+
+# print('Your age is: ' + str(age))
+# print(datetime.today())
+
+
+#Reference: http://easypythondocs.com/validation.html
+
+

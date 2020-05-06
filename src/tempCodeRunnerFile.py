@@ -1,1 +1,1 @@
-f = open('foo.txt', 'r')
+, way.description()
